@@ -3,9 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="css/style.css">
     <title>Emergency Services</title>
 </head>
 <body>
-    
+    <header >
+        <nav class="flex justify-between items-center mx-15 mt-4">
+            <div class="flex justify-center items-center gap-3">
+                <div class="max-w-[50px]"><img src="./assets/logo.png" alt=""></div>
+                <h2 class="text-xl text-[#006747] font-extrabold">Emergency<br>Service</h2>
+            </div>
+            <div>
+                <ul class="flex items-center justify-between gap-5">
+                    <li class="flex gap-2.5 btn bg-[rgba(65,255,107,0.1)] rounded-3xl">
+                        <span>0</span> <img src="./assets/heart.png" alt="" class="max-w-[30px] ">
+                    </li>
+                    <li class="flex gap-2.5 btn bg-[rgba(65,255,107,0.1)] rounded-3xl">
+                        <span>0</span><img src="./assets/coin.png" alt="" class="max-w-[30px]">
+                    </li>
+                    <li class="btn bg-[#00A63E] text-white rounded-3xl">
+                        <span>0</span> Copy
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <section class="bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] flex flex-col items-center justify-center gap-2.5 py-4 mt-6">
+            <img src="./assets/logo-dark.png" alt="" class="max-w-[92px]">
+            <h1 class="text-4xl text-white font-bold">Emergency Service Directory</h1>
+            <p class="font-semibold text-white text-xl">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+        </section>
+    </header>
 </body>
 </html>

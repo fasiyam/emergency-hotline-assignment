@@ -22,13 +22,13 @@
             <div class="hidden md:block">
                 <ul class="flex items-center justify-between gap-5">
                     <li class="flex gap-2.5 btn bg-[rgba(65,255,107,0.1)] rounded-3xl">
-                        <span>0</span> <img src="./assets/heart.png" alt="" class="max-w-[30px] ">
+                        <span id="like-count">0</span> <img src="./assets/heart.png" alt="" class="max-w-[30px] ">
                     </li>
                     <li class="flex gap-2.5 btn bg-[rgba(65,255,107,0.1)] rounded-3xl">
-                        <span>100</span><img src="./assets/coin.png" alt="" class="max-w-[30px]">
+                        <span id="coins">100</span><img src="./assets/coin.png" alt="" class="max-w-[30px]">
                     </li>
                     <li class="btn bg-[#00A63E] text-white rounded-3xl">
-                        <span>0</span> Copy
+                        <span id="copy-counts">0</span> Copy
                     </li>
                 </ul>
             </div>
@@ -48,144 +48,144 @@
             <div class="bg-white max-w-[480px] rounded-2xl relative shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)]">
                 <div class="flex justify-between items-center p-4 ">
                     <img src="./assets/emergency.png" alt="" class="max-w-[40px]">
-                    <i class="fa-regular fa-heart"></i>
+                    <span class="like-btn"><i class="fa-regular fa-heart"></i></span>
                 </div>
                 <div class="p-4">
                     <h2 class="text-2xl font-bold leading-8">National Emergency Number</h2>
                     <p class="text-lg text-[#5C5C5C] ">National Emergency</p>
-                    <h3 class="text-[32px] text-[#111111]">999</h3>
+                    <h3 class="text-[32px] text-[#111111] number">999</h3>
                     <p class="text-[#5C5C5C] text-lg bg-[#F2F2F2] px-4 py-1 rounded-full w-fit">All</p>
                 </div>
                 <div class="p-4 flex justify-between items-center">
-                    <button class="btn w-[45%] text-[#5C5C5C]"><i class="fa-regular fa-copy"></i> Copy</button>
+                    <button class="btn w-[45%] text-[#5C5C5C] copy-number"><i class="fa-regular fa-copy"></i> Copy</button>
                     <button class="btn bg-[#00A63E] w-[45%] text-white"><i class="fa-solid fa-phone"></i> Call</button>
                 </div>
             </div>
             <div class="bg-white max-w-[480px] rounded-2xl shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)]">
-                <div class="flex justify-between items-center p-4">
+                <div class="flex justify-between items-center p-4 ">
                     <img src="./assets/police.png" alt="" class="max-w-[40px]">
-                    <i class="fa-regular fa-heart"></i>
+                    <span class="like-btn"><i class="fa-regular fa-heart"></i></span>
                 </div>
                 <div class="p-4">
                     <h2 class="text-2xl font-bold leading-8">Police Helpline Number</h2>
                     <p class="text-lg text-[#5C5C5C] ">Police</p>
-                    <h3 class="text-[32px] text-[#111111]">999</h3>
+                    <h3 class="text-[32px] text-[#111111] number">999</h3>
                     <p class="text-[#5C5C5C] text-lg bg-[#F2F2F2] px-4 py-1 rounded-full w-fit">Police</p>
                 </div>
                 <div class="p-4 flex justify-between items-center">
-                    <button class="btn w-[48%] text-[#5C5C5C]"><i class="fa-regular fa-copy"></i> Copy</button>
+                    <button class="btn w-[48%] text-[#5C5C5C] copy-number"><i class="fa-regular fa-copy"></i> Copy</button>
                     <button class="btn bg-[#00A63E] w-[48%] text-white"><i class="fa-solid fa-phone"></i> Call</button>
                 </div>
             </div>
             <div class="bg-white max-w-[480px] rounded-2xl shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)]">
                 <div class="flex justify-between items-center p-4">
                     <img src="./assets/fire-service.png" alt="" class="max-w-[40px]">
-                    <i class="fa-regular fa-heart"></i>
+                    <span class="like-btn"><i class="fa-regular fa-heart"></i></span>
                 </div>
                 <div class="p-4">
                     <h2 class="text-2xl font-bold leading-8">Fire Service Number</h2>
                     <p class="text-lg text-[#5C5C5C] ">Fire Service</p>
-                    <h3 class="text-[32px] text-[#111111]">999</h3>
+                    <h3 class="text-[32px] text-[#111111] number">999</h3>
                     <p class="text-[#5C5C5C] text-lg bg-[#F2F2F2] px-4 py-1 rounded-full w-fit">Fire</p>
                 </div>
                 <div class="p-4 flex justify-between items-center">
-                    <button class="btn w-[45%] text-[#5C5C5C]"><i class="fa-regular fa-copy"></i> Copy</button>
+                    <button class="btn w-[45%] text-[#5C5C5C] copy-number"><i class="fa-regular fa-copy"></i> Copy</button>
                     <button class="btn bg-[#00A63E] w-[45%] text-white"><i class="fa-solid fa-phone"></i> Call</button>
                 </div>
             </div>
             <div class="bg-white max-w-[480px] rounded-2xl shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)]">
                 <div class="flex justify-between items-center p-4">
                     <img src="./assets/ambulance.png" alt="" class="max-w-[40px]">
-                    <i class="fa-regular fa-heart"></i>
+                    <span class="like-btn"><i class="fa-regular fa-heart"></i></span>
                 </div>
                 <div class="p-4">
                     <h2 class="text-2xl font-bold leading-8">Ambulance Service</h2>
                     <p class="text-lg text-[#5C5C5C] ">Ambulance</p>
-                    <h3 class="text-[32px] text-[#111111]">1994-999999</h3>
+                    <h3 class="text-[32px] text-[#111111] number">1994-999999</h3>
                     <p class="text-[#5C5C5C] text-lg bg-[#F2F2F2] px-4 py-1 rounded-full w-fit">Health</p>
                 </div>
                 <div class="p-4 flex justify-between items-center">
-                    <button class="btn w-[45%] text-[#5C5C5C]"><i class="fa-regular fa-copy"></i> Copy</button>
+                    <button class="btn w-[45%] text-[#5C5C5C] copy-number"><i class="fa-regular fa-copy"></i> Copy</button>
                     <button class="btn bg-[#00A63E] w-[45%] text-white"><i class="fa-solid fa-phone"></i> Call</button>
                 </div>
             </div>
             <div class="bg-white max-w-[480px] rounded-2xl shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)]">
                 <div class="flex justify-between items-center p-4">
                     <img src="./assets/emergency.png" alt="" class="max-w-[40px]">
-                    <i class="fa-regular fa-heart"></i>
+                    <span class="like-btn"><i class="fa-regular fa-heart"></i></span>
                 </div>
                 <div class="p-4">
                     <h2 class="text-2xl font-bold leading-8">Women & Child Helpline</h2>
                     <p class="text-lg text-[#5C5C5C] ">Women & Child Helpline</p>
-                    <h3 class="text-[32px] text-[#111111]">109</h3>
+                    <h3 class="text-[32px] text-[#111111] number">109</h3>
                     <p class="text-[#5C5C5C] text-lg bg-[#F2F2F2] px-4 py-1 rounded-full w-fit">Help</p>
                 </div>
                 <div class="p-4 flex justify-between items-center">
-                    <button class="btn w-[45%] text-[#5C5C5C]"><i class="fa-regular fa-copy"></i> Copy</button>
+                    <button class="btn w-[45%] text-[#5C5C5C] copy-number"><i class="fa-regular fa-copy"></i> Copy</button>
                     <button class="btn bg-[#00A63E] w-[45%] text-white"><i class="fa-solid fa-phone"></i> Call</button>
                 </div>
             </div>
             <div class="bg-white max-w-[480px] rounded-2xl shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)]">
                 <div class="flex justify-between items-center p-4">
                     <img src="./assets/emergency.png" alt="" class="max-w-[40px]">
-                    <i class="fa-regular fa-heart"></i>
+                    <span class="like-btn"><i class="fa-regular fa-heart"></i></span>
                 </div>
                 <div class="p-4">
                     <h2 class="text-2xl font-bold leading-8">Anti-Corruption Helpline</h2>
                     <p class="text-lg text-[#5C5C5C] ">National Emergency</p>
-                    <h3 class="text-[32px] text-[#111111]">106</h3>
+                    <h3 class="text-[32px] text-[#111111] number">106</h3>
                     <p class="text-[#5C5C5C] text-lg bg-[#F2F2F2] px-4 py-1 rounded-full w-fit">All</p>
                 </div>
                 <div class="p-4 flex justify-between items-center">
-                    <button class="btn w-[45%] text-[#5C5C5C]"><i class="fa-regular fa-copy"></i> Copy</button>
+                    <button class="btn w-[45%] text-[#5C5C5C] copy-number"><i class="fa-regular fa-copy"></i> Copy</button>
                     <button class="btn bg-[#00A63E] w-[45%] text-white"><i class="fa-solid fa-phone"></i> Call</button>
                 </div>
             </div>
             <div class="bg-white max-w-[480px] rounded-2xl shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)]">
                 <div class="flex justify-between items-center p-4">
                     <img src="./assets/emergency.png" alt="" class="max-w-[40px]">
-                    <i class="fa-regular fa-heart"></i>
+                    <span class="like-btn"><i class="fa-regular fa-heart"></i></span>
                 </div>
                 <div class="p-4">
                     <h2 class="text-2xl font-bold leading-8">Electricity Helpline</h2>
                     <p class="text-lg text-[#5C5C5C] ">Electricity Outage</p>
-                    <h3 class="text-[32px] text-[#111111]">16216</h3>
+                    <h3 class="text-[32px] text-[#111111] number">16216</h3>
                     <p class="text-[#5C5C5C] text-lg bg-[#F2F2F2] px-4 py-1 rounded-full w-fit">Electricity</p>
                 </div>
                 <div class="p-4 flex justify-between items-center">
-                    <button class="btn w-[45%] text-[#5C5C5C]"><i class="fa-regular fa-copy"></i> Copy</button>
+                    <button class="btn w-[45%] text-[#5C5C5C] copy-number"><i class="fa-regular fa-copy"></i> Copy</button>
                     <button class="btn bg-[#00A63E] w-[45%] text-white"><i class="fa-solid fa-phone"></i> Call</button>
                 </div>
             </div>
             <div class="bg-white max-w-[480px] rounded-2xl shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)]">
                 <div class="flex justify-between items-center p-4">
                     <img src="./assets/emergency.png" alt="" class="max-w-[40px]">
-                    <i class="fa-regular fa-heart"></i>
+                    <span class="like-btn"><i class="fa-regular fa-heart"></i></span>
                 </div>
                 <div class="p-4">
                     <h2 class="text-2xl font-bold leading-8">Brac Helpline</h2>
                     <p class="text-lg text-[#5C5C5C] ">Brac</p>
-                    <h3 class="text-[32px] text-[#111111]">16445</h3>
+                    <h3 class="text-[32px] text-[#111111] number">16445</h3>
                     <p class="text-[#5C5C5C] text-lg bg-[#F2F2F2] px-4 py-1 rounded-full w-fit">NGO</p>
                 </div>
                 <div class="p-4 flex justify-between items-center">
-                    <button class="btn w-[45%] text-[#5C5C5C]"><i class="fa-regular fa-copy"></i> Copy</button>
+                    <button class="btn w-[45%] text-[#5C5C5C] copy-number"><i class="fa-regular fa-copy"></i> Copy</button>
                     <button class="btn bg-[#00A63E] w-[45%] text-white"><i class="fa-solid fa-phone"></i> Call</button>
                 </div>
             </div>
             <div class="bg-white max-w-[480px] rounded-2xl shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)]">
                 <div class="flex justify-between items-center p-4">
                     <img src="./assets/emergency.png" alt="" class="max-w-[40px]">
-                    <i class="fa-regular fa-heart"></i>
+                    <span class="like-btn"><i class="fa-regular fa-heart"></i></span>
                 </div>
                 <div class="p-4">
                     <h2 class="text-2xl font-bold leading-8">Bangladesh Railway Helpline </h2>
                     <p class="text-lg text-[#5C5C5C] ">Bangladesh Railway</p>
-                    <h3 class="text-[32px] text-[#111111]">163</h3>
+                    <h3 class="text-[32px] text-[#111111] number">163</h3>
                     <p class="text-[#5C5C5C] text-lg bg-[#F2F2F2] px-4 py-1 rounded-full w-fit">Travel</p>
                 </div>
                 <div class="p-4 flex justify-between items-center">
-                    <button class="btn w-[45%] text-[#5C5C5C]"><i class="fa-regular fa-copy"></i> Copy</button>
+                    <button class="btn w-[45%] text-[#5C5C5C] copy-number"><i class="fa-regular fa-copy"></i> Copy</button>
                     <button class="btn bg-[#00A63E] w-[45%] text-white"><i class="fa-solid fa-phone"></i> Call</button>
                 </div>
             </div>
@@ -203,5 +203,7 @@
             <button class="btn bg-[#00A63E] text-white px-9 py-3 rounded-full font-bold leading-6">Clear</button>
         </section>
     </main>
+
+    <script src="javascript/app.js"></script>
 </body>
 </html>

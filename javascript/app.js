@@ -27,7 +27,22 @@ for(const btn of likeBtns){
 
 // Copy features
 
+const copyBtns = document.getElementsByClassName("copy-number");
+const emergencyNumbers = document.getElementsByClassName("number");
 
+for(let i = 0; i < copyBtns.length; i++) {
+    copyBtns[i].addEventListener("click", function(){
+        let currentCopyCount = getInputAsNumber("copy-counts");
+        let emNumber = emergencyNumbers[i].textContent;
+
+        currentCopyCount += 1;
+
+        navigator.clipboard.writeText(emNumber);
+        alert(`Number Copied ${emNumber}`)
+
+        setInnerText("copy-counts", currentCopyCount);
+    })
+}
 
 
 // Call features

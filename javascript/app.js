@@ -49,6 +49,7 @@ for(let i = 0; i < copyBtns.length; i++) {
 
 const callBtns = document.querySelectorAll(".call-btn");
 const emergencyServices = document.getElementsByClassName("title");
+const parrentElement = document.getElementById("call-history");
 const data = [];
 
 for(let i = 0; i < callBtns.length; i++){
@@ -67,11 +68,36 @@ for(let i = 0; i < callBtns.length; i++){
             }
 
             data.push(values);
+
+            const currentTime = new Date();
+            const callLog = document.createElement('div');
+            callLog.innerHTML = `
+                <div class="flex justify-between items-center p-4 gap-1">
+                <div>
+                    <h3 class="text-lg font-semibold text-[#111111] ">${values.serviceName}</h3>
+                    <p class="text-lg text-[#5C5C5C]">${values.serviceNum}</p>
+                </div>
+                <div>
+                    <p class="text-lg text-[#111111]">${currentTime.toLocaleTimeString()}</p>
+                </div>
+            </div>
+            `
+
+            parrentElement.appendChild(callLog);
         } else {
             alert("You don't have enough coins to call! You need at least 20 coins to call");
         }
     })
 }
 
+
+// Clear log features
+
+const clearBtn = document.getElementById("clear-btn");
+
+clearBtn.addEventListener("click", function() {
+    parrentElement.innerHTML = "";
+    data.length = 0;
+});
 
 

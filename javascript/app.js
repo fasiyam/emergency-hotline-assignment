@@ -72,7 +72,7 @@ for(let i = 0; i < callBtns.length; i++){
             const currentTime = new Date();
             const callLog = document.createElement('div');
             callLog.innerHTML = `
-                <div class="flex justify-between items-center p-4 gap-1">
+                <div class="flex justify-between items-center p-4 gap-1.5">
                 <div>
                     <h3 class="text-lg font-semibold text-[#111111] ">${values.serviceName}</h3>
                     <p class="text-lg text-[#5C5C5C]">${values.serviceNum}</p>

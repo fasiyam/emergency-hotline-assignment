@@ -2,4 +2,9 @@
 
 @import "tailwindcss";
 
+@layer utilities {
+    .font-hind{
+        font-family: "Hind Madurai";
+    }
+}
 

@@ -101,3 +101,11 @@ clearBtn.addEventListener("click", function() {
 });
 
 
+
+// Hamburger menu on mobile
+
+const menu = document.getElementById("hamburger-menu");
+
+menu.addEventListener("click", function(){
+    document.getElementById("menu-bar").classList.toggle("hidden");
+})

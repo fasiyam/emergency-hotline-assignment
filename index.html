@@ -11,16 +11,13 @@
 </head>
 <body class="font-hind">
     <header >
-        <nav class="flex justify-between items-center mx-3 lg:mx-15 mt-4">
+        <nav class="flex flex-col md:flex-row gap-2 justify-between items-center mx-3 lg:mx-15 mt-4">
             <div class="flex justify-center items-center gap-3">
                 <div class="max-w-[50px]"><img src="./assets/logo.png" alt=""></div>
                 <h2 class="text-xl text-[#006747] font-extrabold">Emergency<br>Service</h2>
             </div>
-            <div class="md:hidden scale-150" id="hamburger-menu">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-            <div class="hidden md:block" id="menu-bar">
-                <ul class="flex flex-col gap-2 md:flex-row md:items-center md:justify-between md:gap-5">
+            <div class="block" id="menu-bar">
+                <ul class="flex flex-row gap-2 md:items-center md:justify-between md:gap-5">
                     <li class="flex gap-2.5 btn bg-[rgba(65,255,107,0.1)] rounded-3xl">
                         <span id="like-count">0</span> <img src="./assets/heart.png" alt="" class="max-w-[30px] ">
                     </li>

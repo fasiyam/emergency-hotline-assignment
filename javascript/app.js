@@ -61,7 +61,7 @@ for(let i = 0; i < callBtns.length; i++){
         if(coins >= 20) {
             coins -= 20;
             setInnerText("coins", coins);
-            alert(`Calling ${emergencyService} ${emergencyNumber}`)
+            alert(`📞 Calling ${emergencyService} ${emergencyNumber}...`)
             const values = {
                 serviceName: emergencyService,
                 serviceNum: emergencyNumber
@@ -85,7 +85,7 @@ for(let i = 0; i < callBtns.length; i++){
 
             parrentElement.appendChild(callLog);
         } else {
-            alert("You don't have enough coins to call! You need at least 20 coins to call");
+            alert("❌ You don't have enough coins to call! You need at least 20 coins to call");
         }
     })
 }
@@ -102,10 +102,3 @@ clearBtn.addEventListener("click", function() {
 
 
 
-// Hamburger menu on mobile
-
-// const menu = document.getElementById("hamburger-menu");
-
-// menu.addEventListener("click", function(){
-//     document.getElementById("menu-bar").classList.toggle("hidden");
-// })

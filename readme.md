@@ -21,7 +21,7 @@ This returns all elements that match the specified CSS selector. This returns a 
 
 ## Create and inserting a DOM element
 
-We frist use `document.createElement()` to make create the element first. Then we can add content to the element. Then we can use `parentDiv.appendChild()` to append the element as the last child. 
+We frist use `document.createElement()` to create the element first. Then we can add content to the element. Then we can use `parentDiv.appendChild()` to append the element as the last child. 
 
 
 ## Event Bubbling
